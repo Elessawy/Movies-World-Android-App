@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="@integer/columns_number"
+        android:layout_weight="1"
+        android:gravity="center"
+        style="@style/MoviesGridStyle">
+
+    </GridView>
+
+
+    <ProgressBar
+        android:id="@+id/progress_par"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/no_connection_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Connection."
+        android:gravity="center"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Retry"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_favourites_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Favourites Movie Saved!"
+        android:layout_weight="2"
+        android:gravity="top|center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/no_more_pages_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="No More Pages"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>
